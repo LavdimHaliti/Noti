@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Noti</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="subject_hint">Subject</string>
+    <string name="enter_text_hint">Enter your text here...</string>
+    <string name="delete">clear</string>
+    <string name="delete_btn">delete</string>
+    <string name="save">save</string>
+    <string name="share_success_text">note shared successfully</string>
+</resources>

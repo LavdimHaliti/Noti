@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listNotesFragment">
+    <fragment
+        android:id="@+id/listNotesFragment"
+        android:name="com.example.noti.ListNotesFragment"
+        android:label="ListNotesFragment" >
+        <action
+            android:id="@+id/action_listNotesFragment_to_detailNoteFragment2"
+            app:destination="@id/detailNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailNoteFragment"
+        android:name="com.example.noti.DetailNoteFragment"
+        android:label="DetailNoteFragment" >
+        <argument
+            android:name="note"
+            app:argType="com.example.noti.database.NoteEntity" />
+    </fragment>
+</navigation>
