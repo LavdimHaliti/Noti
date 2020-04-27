@@ -11,7 +11,7 @@ import androidx.room.*
 interface NoteDao {
 
     //Take the NoteEntity table and insert data in
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(note: NoteEntity)
 
     //Take the NoteEntity table and update the existing data

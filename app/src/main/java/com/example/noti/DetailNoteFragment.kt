@@ -57,6 +57,8 @@ class DetailNoteFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
         binding = FragmentDetailNoteBinding.inflate(inflater)
 
         //connect the viewmodel with the lyout using data binding
@@ -76,6 +78,7 @@ class DetailNoteFragment : Fragment() {
             note.name = binding.nameEditText.text.toString()
             note.content = binding.contentEditText.text.toString()
             detailNoteViewModel.saveNote(note)
+
         }
 
         //delete the current note

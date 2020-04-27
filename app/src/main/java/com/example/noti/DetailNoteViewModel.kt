@@ -102,9 +102,11 @@ class DetailNoteViewModel(val note: NoteEntity, app: Application) : AndroidViewM
         viewModelScope.launch {
             if (isNewNote) {
                 insertNote(note)
+                _navigateToListNoteFragment.value = true
             }else{
                 note.id = this@DetailNoteViewModel.note.id
                 updateNote(note)
+                _navigateToListNoteFragment.value = true
             }
         }
     }
